@@ -7,5 +7,5 @@ It makes use of pipenv to manage the package - you'll need to install pipenv
 
 ```
 pip3 install pipenv
-pipenv run "python find_meteors.py"`
+pipenv run "python meteors/find_meteors.py"`
 ```
