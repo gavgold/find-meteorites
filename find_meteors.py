@@ -33,4 +33,5 @@ if __name__ == '__main__':
     meteor_data.sort(key=get_dist)
 
     for meteor in range(10):
-        print(meteor_data[meteor])
+#        print(meteor_data[meteor])
+        print(str(meteor_data[meteor]['name']) + ' ' + str(meteor_data[meteor]['year']) + ' ' + str(meteor_data[meteor]['distance']))
