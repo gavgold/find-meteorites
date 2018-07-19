@@ -32,4 +32,5 @@ if __name__ == '__main__':
 
     meteor_data.sort(key=get_dist)
 
-    print(meteor_data[0:10])
+    for meteor in range(10):
+        print(meteor_data[meteor])
