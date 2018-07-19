@@ -26,12 +26,12 @@ if __name__ == '__main__':
     for meteor in meteor_data:
         if not ('reclat' in meteor and 'reclong' in meteor): continue
         meteor['distance'] = calc_dist(float(meteor['reclat']),
-                                       float(meteor['reclong']),
-                                       my_loc[0],
-                                       my_loc[1])
+                                        float(meteor['reclong']),
+                                        my_loc[0],
+                                        my_loc[1])
 
     meteor_data.sort(key=get_dist)
 
     for meteor in range(10):
-#        print(meteor_data[meteor])
+    #        print(meteor_data[meteor])
         print(str(meteor_data[meteor]['name']) + ' ' + str(meteor_data[meteor]['year']) + ' ' + str(meteor_data[meteor]['distance']))
